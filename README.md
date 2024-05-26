@@ -12,10 +12,10 @@
 Steps I followed:
 1. I have used the `PyPdfDirectoryLoader` from the `langchain_community` document loader to load the PDF documents from the `us-census-data` directory.
 2. transformed each text into a chunk of `1000` using the `RecursiveCharacterTextSplitter` imported from the `langchain.text_splitter`
-3. stored the vector embeddings which were made using the `HuggingFaceBgeEmbeddings` using the `Objectbox` vector store.
+3. stored the vector embeddings which were made using the `HuggingFaceBgeEmbeddings` using the `ObjectBox` vector store.
 4. setup the llm `ChatGroq` with the model name `Llama3-8b-8192`
 5. Setup `ChatPromptTemplate`
-6. Setup `vector_embedding` function to enbedd the documents and store them in the `Objectbox` vectorstore
+6. Setup `vector_embedding` function to enbedd the documents and store them in the `ObjectBox` vectorstore
 7. finally created the `document_chain` and `retrieval_chain` for chaining llm to prompt and `retriever` to `document_chain` respectively
 
 ## Libraries Used
